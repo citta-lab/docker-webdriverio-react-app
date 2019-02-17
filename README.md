@@ -40,7 +40,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 Refer [this](https://medium.com/@shakyShane/lets-talk-about-docker-artifacts-27454560384f) document for more details
 
-### Import Docker Steps
+### Important Docker Steps
 1. Build an Image in Docker
 ```
 docker build . -t mahesh/docker-app
