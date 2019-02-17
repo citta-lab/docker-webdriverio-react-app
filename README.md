@@ -37,3 +37,18 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 Refer [this](https://medium.com/@shakyShane/lets-talk-about-docker-artifacts-27454560384f) document for more details
+
+### Import Docker Steps
+1. Build an Image in Docker
+```
+docker build . -t mahesh/docker-app
+```
+2. Check Images
+```
+docker images
+```
+3. Run built image
+```
+docker run -p 8080:80 mahesh/docker-app
+```
+docker port 80 will be mapped to 8080 in localhost
